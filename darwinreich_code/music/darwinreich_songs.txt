@@ -7,20 +7,10 @@ music = {
 			factor = 2
 
 			has_war = yes
-			has_government = fascism
+			has_government = {Classic-Fasicm }
+			TAG = ITA
 		}		
 	}	
-}
-
-music = {
-	song = "Get Blake"
-	
-	chance = {
-		modifier = {
-			factor = 0.01
-
-		}		
-	}
 }
 
 music = {
@@ -31,7 +21,21 @@ music = {
 			factor = 2
 
 			has_war = yes
-			has_government = democratic
+			has_government = {Conservatism Liberalism social-democracy reactionary-democracy }
+			TAG = HOL
 		}		
 	}	
 }
+
+music = {
+	song = "Der Koniggratzer Marsch"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = yes
+			TAG = GER
+		}		
+	}	
+}
+
