@@ -1,0 +1,66 @@
+ideas = {
+
+	country = {
+
+		depillarized_focus = {
+			
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+		
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+
+			modifier = {
+				conservatism_drift = -0.03
+				liberalism_drift = -0.03
+				social-democracy_drift = -0.03
+				reactionary-democracy_drift = -0.03
+			}
+		}
+	
+		pillarized_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1
+				join_faction_tension = 0.20
+				drift_defence_factor = 0.75
+			}
+		}
+
+		polderen_focus = {
+			
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+		
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+
+			modifier = {conservatism_drift = 0.02
+				liberalism_drift = 0.02
+				social-democracy_drift = 0.02
+				reactionary-democracy_drift = 0.02
+
+			stability_factor = 0.20
+			}
+		}

@@ -1,0 +1,139 @@
+focus_tree = {
+	id = dutch_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = HOL
+		}
+	}
+	
+	default = no
+
+	focus = {
+		id = HOL_depilleraze
+		icon = GFX_goal_forcefull_treaty
+		mutually_exclusive = { focus = HOL_polderen }
+		x = 4
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = 150
+			add_ideas = depillarized_focus
+			remove_ideas = pillarized_focus			}
+}
+
+focus = {
+		id = HOL_polderen
+		icon = GFX_goal_generic_intelligence_exchange
+		mutually_exclusive = { focus = HOL_depilleraze }
+		x = 9
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = 150
+			add_ideas = polderen_focus
+			remove_ideas = pillarized_focus			}
+}
+
+focus = {
+		id = HOL_burgeroorlog
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = HOL_depilleraze }
+		mutually_exclusive = { focus = HOL_ditch_clavanism HOL_before_rome }
+		x = 2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = 150
+			add_ideas = polderen_focus
+			remove_ideas = pillarized_focus			}
+}
+
+focus = {
+		id = HOL_ditch_calvinism
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = HOL_depilleraze }
+		mutually_exclusive = { focus = HOL_burgeroorlog HOL_before_rome }
+		x = 6
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = 150
+			add_ideas = polderen_focus
+			remove_ideas = pillarized_focus			}
+}
+
+focus = {
+		id = HOL_before_rome
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = HOL_depilleraze }
+		mutually_exclusive = { focus = HOL_burgeroorlog HOL_ditch_calvinism }
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = 150
+			add_ideas = polderen_focus
+			remove_ideas = pillarized_focus			}
+
+}
+
+focus = {
+		id = HOL_batavian_society
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = HOL_before_rome }
+		mutually_exclusive = { focus = HOL_glory_of_frisia }
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = 150
+			add_ideas = polderen_focus
+			remove_ideas = pillarized_focus			}
+}
+
+focus = {
+		id = HOL_glory_of_frisia
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = HOL_before_rome }
+		mutually_exclusive = { focus = HOL_batavian_society }
+		x = 1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = 150
+			add_ideas = polderen_focus
+			remove_ideas = pillarized_focus			}
+}
+
