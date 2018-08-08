@@ -1,1 +1,2 @@
 Convert flags to .tga
+Resize flags
