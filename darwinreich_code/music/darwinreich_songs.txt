@@ -1,0 +1,37 @@
+
+music = {
+	song = "Giovinezza"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = yes
+			has_government = fascism
+		}		
+	}	
+}
+
+music = {
+	song = "Get Blake"
+	
+	chance = {
+		modifier = {
+			factor = 0.01
+
+		}		
+	}
+}
+
+music = {
+	song = "Merck toch hoe sterck"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = yes
+			has_government = democratic
+		}		
+	}	
+}
